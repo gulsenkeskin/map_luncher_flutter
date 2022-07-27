@@ -38,7 +38,7 @@ class _ShowDirectionsState extends State<ShowDirections> {
             TextFormField(
               autocorrect: false,
               autovalidateMode: AutovalidateMode.disabled,
-              decoration: InputDecoration(labelText: 'Destination Latitude'),
+              decoration: const InputDecoration(labelText: 'Destination Latitude'),
               initialValue: destinationLatitude.toString(),
               onChanged: (newValue) {
                 setState(() {
@@ -49,7 +49,7 @@ class _ShowDirectionsState extends State<ShowDirections> {
             TextFormField(
               autocorrect: false,
               autovalidateMode: AutovalidateMode.disabled,
-              decoration: InputDecoration(labelText: 'Destination Longitude'),
+              decoration: const InputDecoration(labelText: 'Destination Longitude'),
               initialValue: destinationLongitude.toString(),
               onChanged: (newValue) {
                 setState(() {
@@ -60,7 +60,7 @@ class _ShowDirectionsState extends State<ShowDirections> {
             TextFormField(
               autocorrect: false,
               autovalidateMode: AutovalidateMode.disabled,
-              decoration: InputDecoration(labelText: 'Destination Title'),
+              decoration: const InputDecoration(labelText: 'Destination Title'),
               initialValue: destinationTitle,
               onChanged: (newValue) {
                 setState(() {
@@ -72,7 +72,7 @@ class _ShowDirectionsState extends State<ShowDirections> {
             TextFormField(
               autocorrect: false,
               autovalidateMode: AutovalidateMode.disabled,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Origin Latitude (uses current location if empty)',
               ),
               initialValue: originLatitude.toString(),
@@ -85,7 +85,7 @@ class _ShowDirectionsState extends State<ShowDirections> {
             TextFormField(
               autocorrect: false,
               autovalidateMode: AutovalidateMode.disabled,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Origin Longitude (uses current location if empty)',
               ),
               initialValue: originLongitude.toString(),
@@ -98,7 +98,7 @@ class _ShowDirectionsState extends State<ShowDirections> {
             TextFormField(
               autocorrect: false,
               autovalidateMode: AutovalidateMode.disabled,
-              decoration: InputDecoration(labelText: 'Origin Title'),
+              decoration: const InputDecoration(labelText: 'Origin Title'),
               initialValue: originTitle,
               onChanged: (newValue) {
                 setState(() {

@@ -6,6 +6,8 @@ import 'package:map_luncher_flutter/show_marker.dart';
 void main() => runApp(MapLauncherFlutter());
 
 class MapLauncherFlutter extends StatefulWidget {
+  const MapLauncherFlutter({Key? key}) : super(key: key);
+
   @override
   _MapLauncherFlutterState createState() => _MapLauncherFlutterState();
 }
@@ -15,7 +17,7 @@ enum LaunchMode { marker, directions }
 class _MapLauncherFlutterState extends State<MapLauncherFlutter> {
   int selectedTabIndex = 0;
 
-  List<Widget> widgets = [ShowMarker(), ShowDirections()];
+  List<Widget> widgets = [ShowMarker(), const ShowDirections()];
 
   @override
   Widget build(BuildContext context) {

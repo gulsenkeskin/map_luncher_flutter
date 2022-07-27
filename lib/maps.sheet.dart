@@ -14,12 +14,11 @@ class MapsSheet {
       builder: (BuildContext context) {
         return SafeArea(
           child: SingleChildScrollView(
-            child: Container(
+            child: SizedBox(
               height: availableMaps.length * 60,
               child: Wrap(
                 children: <Widget>[
                   for (var map in availableMaps)
-                    if (map != null)
                       ListTile(
                         onTap: () => onMapTap(map),
                         title: Text(map.mapName),

@@ -23,7 +23,7 @@ class _ShowMarkerState extends State<ShowMarker> {
           TextFormField(
             autocorrect: false,
             autovalidateMode: AutovalidateMode.disabled,
-            decoration: InputDecoration(labelText: 'Latitude'),
+            decoration: const InputDecoration(labelText: 'Latitude'),
             initialValue: latitude.toString(),
             onChanged: (newValue) {
               setState(() {
@@ -34,7 +34,7 @@ class _ShowMarkerState extends State<ShowMarker> {
           TextFormField(
             autocorrect: false,
             autovalidateMode: AutovalidateMode.disabled,
-            decoration: InputDecoration(labelText: 'Longitude'),
+            decoration: const InputDecoration(labelText: 'Longitude'),
             initialValue: longitude.toString(),
             onChanged: (newValue) {
               setState(() {
@@ -45,7 +45,7 @@ class _ShowMarkerState extends State<ShowMarker> {
           TextFormField(
             autocorrect: false,
             autovalidateMode: AutovalidateMode.disabled,
-            decoration: InputDecoration(labelText: 'Title'),
+            decoration: const InputDecoration(labelText: 'Title'),
             initialValue: title,
             onChanged: (newValue) {
               setState(() {
@@ -56,7 +56,7 @@ class _ShowMarkerState extends State<ShowMarker> {
           TextFormField(
             autocorrect: false,
             autovalidateMode: AutovalidateMode.disabled,
-            decoration: InputDecoration(labelText: 'Zoom'),
+            decoration: const InputDecoration(labelText: 'Zoom'),
             initialValue: zoom.toString(),
             onChanged: (newValue) {
               setState(() {
@@ -64,7 +64,7 @@ class _ShowMarkerState extends State<ShowMarker> {
               });
             },
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           MaterialButton(
             onPressed: () {
               MapsSheet.show(
@@ -78,7 +78,7 @@ class _ShowMarkerState extends State<ShowMarker> {
                 },
               );
             },
-            child: Text('Show Maps'),
+            child: const Text('Show Maps'),
           )
         ],
       ),
